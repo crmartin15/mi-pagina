@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+  margin: 0;
+}
+h2 {
+  color: rgb(87, 173, 145);
+}
+p {
+  line-height: 1.6;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #999999;
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: #1b9b5b;
+  color: #f1f1f1;
+  padding: 24px;
+  text-align: center;
+}
+nav {
+  background-color: #222222;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: aqua;
+}
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
